@@ -1,0 +1,156 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+</head>
+<body>
+    <div class="main-con">
+        <div class="navbar-con">
+            <div class="navbar-left">
+                <div class="navbar-logo">
+                    <p>
+                        <img src="{%static 'images/logo.png'%}"  alt="TrotroLive"logo width="80" height="50">
+                    </p>
+                </div>
+                <div class="navbar-menu">
+                    <p><a href="/home">Home</a></p>
+                    <p><a href ="/about">About</a></p>
+                    <p><a href="/contact">Contact Us</a></p>
+                    <p><a href="/service">Services</a></p>
+                    <p><a href="/faq">FAQ</a></p>
+                </div>
+            </div>
+            <div class="navbar-right">            
+                <p><a href="/geocode">Geocode</a></p>
+                <input type="submit" name="submit" value="Login">
+                <input type="submit" name="submit" value="Sign up">
+            </div>
+            <div class="navbar-icon" id="hamb">
+                <img src="{%static 'images/align-justify.svg'%}"  alt="TrotroLive" >
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="navbar-menu-drop">
+                <p><a href="/home">Home</a></p>
+                <p><a href ="/about">About</a></p>
+                <p><a href="/contact">Contact Us</a></p>
+                <p><a href="/service">Services</a></p>
+                <p><a href="/faq">FAQ</a></p>
+            </div> 
+        </div>
+    </div> 
+    <div class="contactsec">
+        <div class="contactp">
+            <p>Contact US</p>
+        </div>
+        <div class="contsec">
+            <div class="contsec1">
+                <p class="context">Contact information</p>
+                <p class="context1">Fill up the form and our team will get back to you within 24 hours.</p>
+                <div class="contlinks">
+                    <a href="#">0245985764</a><br>
+                    <a href="#">info@trotro.ai</a>
+                    <div>            
+                        <img src="{%static 'images/accra.svg'%}"  alt="comma-pic">  
+                    </div>
+                </div>
+                <div class="contlink1">
+                    <div>            
+                        <img src="{%static 'images/twitter.svg'%}"  alt="comma-pic">  
+                    </div>
+                    <div>            
+                        <img src="{%static 'images/linkedin.svg'%}"  alt="comma-pic">  
+                    </div>
+                </div>
+            </div>
+            <div class="contsec2">
+                <form method="post"  action="mailto:hildaamadu@gmail.com" enctype="text/plain">
+                    <input name="name" type="text" placeholder="Fullname">
+                    <input name="email" type="text"  placeholder="Email" class="inputF"> <br>
+                    <textarea name="comments" rows="8" cols="82" placeholder="Message Here..."></textarea><br>
+                    <input type="submit" class="send_mess"  value="Send" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <div class="mission">
+            <div class="serv-text">
+                <p>Our Mission</p>
+            </div>
+            <div class="miss-link">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                industry. Lorem Ipsum has been the </p>
+            </div>
+        </div>
+        <div class="mission">
+            <div class="serv-text">
+                <p>Services</p>
+            </div>
+            <div class="serv-links">
+                <a href="#">Pick a ride</a><br>
+                <a href="#">Find missing item</a><br>
+                <a href="#">Pick a ride</a>
+            </div>
+        </div> 
+        <div class="mission">
+            <div class="serv-text">
+                <p>Quick links</p>
+            </div>
+            <div class="serv-links">
+                <a href="#">Home</a><br>
+                <a href="#">About Us</a><br>
+                <a href="#">Services</a>
+            </div>
+        </div>
+        <div class="mission">
+            <div class="serv-text">
+                <p>Contact Info</p>
+            </div>
+            <div class="serv-links">
+                <a href="#">024 598 5764</a><br>
+                <a href="#">info@trotro.ai</a>
+            </div>
+        </div>  
+    </div>
+    <footer>
+        <div class="socials">
+            <div>            
+                <img src="{%static 'images/twitter.svg'%}"  alt="comma-pic">  
+            </div>
+            <div>            
+                <img src="{%static 'images/linkedin.svg'%}"  alt="comma-pic">  
+            </div>
+            <div>            
+                <img src="{%static 'images/world.svg'%}"  alt="comma-pic">  
+            </div>
+            <div>            
+                <img src="{%static 'images/accra.svg'%}"  alt="comma-pic">  
+            </div>
+        </div>
+        <div>
+            <div class="policy-box">
+                <span>&#169; 404 Solutions Inc 2022 . All rights reserved. </span>
+            </div>
+            <div class="termsbox">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+
+<script src="{% static 'main.js' %}"></script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>    
+</body>
+</html>
